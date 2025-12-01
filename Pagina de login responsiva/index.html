@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaqueries.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="side-left">
+                <h1>Transformando <span class="colorh1">ideias</span> em<br>
+                    <span class="colorh1">produtos digitais.</span></h1>
+                <p class="text-mobile">Aqui você encontrará o melhor material do desenvolvedor com dicas e técnicas sobre as mais diversas ferramentas web para se tornar um desenvolvedor FullStack. </p>
+                <picture>
+                    <source media="(max-width: 992px)" srcset="img/code.svg">
+                    <img class="img" src="img/space.svg" alt="left-side">
+                </picture>
+            </div>
+            <div class="side-right">
+                <form class="form">
+                    <p class="title">Cadastre-se </p>
+                    <p class="message">Cadastre-se agora e tenha acesso total ao nosso site. </p>
+                        <div class="flex">
+                        <label>
+                            <input class="input" type="text" placeholder="" required="">
+                            <span>Nome</span>
+                        </label>
+                        <label>
+                            <input id="lastname" class="input" type="text" placeholder="" required="">
+                            <span id="lastname">Sobrenome</span>
+                        </label>
+                    </div>
+                    <label>
+                        <input class="input" type="email" placeholder="" required="">
+                        <span>E-mail</span>
+                    </label>
+                    <label>
+                        <input class="input" type="password" placeholder="" required="">
+                        <span>Senha</span>
+                    </label>
+                    <label>
+                        <input class="input" type="password" placeholder="" required="">
+                        <span>Confirme sua senha</span>
+                    </label>
+                    <button class="submit">Enviar</button>
+                    <p class="signin">Já tem uma conta? <a href="#">Entrar</a> </p>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

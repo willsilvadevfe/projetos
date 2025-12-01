@@ -1,0 +1,194 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');/*Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');/*Shadows Into Light*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-color:#191522;
+}
+
+.container{
+    width: 90vw;   
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+  margin-bottom: -24px;
+  padding-bottom: 30px;
+  color: #c2c2c2;
+  font-size: 2.4em;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-right: 60px;
+  margin-top: 14px;
+}
+
+.colorh1{
+  color: #00FF87;
+}
+
+.text-mobile{
+  display: none;
+}
+
+.img{
+  padding-right: 50px;
+  width: 450px;
+}
+
+/* ------ FORMULARIO ------ */
+
+.form {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #2b263d;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00FF87;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00FF87;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline white;
+  }
+  
+  .signin a {
+    color: #00FF87;;
+  }
+  
+  .flex {
+    display: flex;
+    width: 97.5%;
+    gap: 16px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #514768;
+    color: #fff;
+    width: 96%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #00FF87;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00FF87;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #63ffb6;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  /* ------ FIM FORMULARIO ------ */
+
+ 

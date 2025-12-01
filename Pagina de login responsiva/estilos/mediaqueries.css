@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');/*Bebas Neue*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');/*Shadows Into Light*/
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (min-width: 400px) and (max-width: 600px)  {
+    .img{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        margin: auto;
+        font-size: 1.8em; 
+    }
+
+    .text-mobile{
+        display: block;
+        color: rgb(197, 197, 197);
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .container{
+        width: 80vw;
+    }
+ 
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .img{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        margin: auto;
+        width: 500px;
+        font-size: 2.0em; 
+    }
+
+    .text-mobile{
+        display: block;
+        color: rgb(197, 197, 197);
+        text-align: center;
+        font-size: 1em;
+        width: 500px;
+    }
+
+   .form{
+    max-width: 65vw;
+   }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .container{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .side-left{
+        margin-top: 40px;
+    }
+
+    .side-right{
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+
+    .img{
+        width: 340px;
+    }
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    .form{
+        width: 38vw;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

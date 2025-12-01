@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relatório dimensional | Safelaunch</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <!-- Mediaqueries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/login.js"></script>
+    <!-- Requisição de login -->
+    <!-- ChartJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- jsPDF -->
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text">Relatório dimensional <span>SAFELAUNCH</span></h1>
+      <!-- Header -->
+      <div class="all-data">
+        <div class="enter-data">
+          <!-- Entrada de dados iniciais -->
+          <label for="formGroupExampleInput" class="form-label mb-0"
+            >Nome do inspetor</label
+          >
+          <input type="text" class="form-control" id="nomeUsuario" />
+          <label for="formGroupExampleInput" class="form-label mb-0"
+            >Partnumber</label
+          >
+          <input type="text" class="form-control" id="numeroPeca" />
+          <label for="formGroupExampleInput" class="form-label mb-0"
+            >Tolerância Superior (mm)</label
+          >
+          <input type="number" id="tolSup" step="0.001" class="form-control" />
+          <label for="formGroupExampleInput" class="form-label mb-0"
+            >Tolerância Inferior (mm)</label
+          >
+          <input type="number" id="tolInf" step="0.001" class="form-control" />
+        </div>
+        <hr class="hr" />
+        <!-- Fechamento de dados iniciais -->
+        <div class="option-data">
+          <!-- Entrada de dados por opção -->
+          <label>Cliente</label>
+          <!-- Select cliente -->
+          <select
+            class="form-select mb-3"
+            aria-label="Default select example"
+            id="cliente"
+          >
+            <option value=""></option>
+            <option value="Cummins">Cummins</option>
+            <option value="Cummins (Kearney)">Cummins (Kearney)</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+            <option value="Fiat">Fiat</option>
+            <option value="FPT">FPT</option>
+            <option value="International Engines">International Engines</option>
+            <option value="Scania">Scania</option>
+            <option value="John Deere">John Deere</option>
+            <option value="Harley-Davidson">Harley-Davidson</option>
+            <option value="MTU">MTU</option>
+            <option value="Stellantis">Stellantis</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Honda">Honda</option>
+            <option value="Aftermarket">Aftermarket</option>
+            <option value="Renault">Renault</option>
+          </select>
+          <!-- Fechamento cliente -->
+          <label>Equipamento</label>
+          <!-- Select equipamento -->
+          <select
+            class="form-select mb-3"
+            aria-label="Default select example"
+            id="nomeMaquina"
+          >
+            <option value=""></option>
+            <option value="Borazon">Borazon</option>
+            <option value="Borazon (01HV)">Borazon (01HV)</option>
+            <option value="Borazon (02HV)">Borazon (02HV)</option>
+            <option value="15G">15G</option>
+            <option value="15GS">15GS</option>
+            <option value="15S">15S</option>
+            <option value="15A">15A</option>
+            <option value="15AC">15AC</option>
+            <option value="15AN">15AN</option>
+            <option value="15P">15P</option>
+            <option value="18D">18D</option>
+            <option value="18DS">18DS</option>
+            <option value="18F">18F</option>
+            <option value="30F">30F</option>
+            <option value="HSG">HSG</option>
+            <option value="EMB">EMB</option>
+            <option value="HSF">HSF</option>
+            <option value="OM2">OM2</option>
+            <option value="OMC">OMC</option>
+            <option value="Tempera de ponta">Tempera de ponta</option>
+            <option value="Lixar haste">Lixar haste</option>
+            <option value="CNC (1)">CNC (1)</option>
+            <option value="CNC (2)">CNC (2)</option>
+            <option value="15PC">15PC</option>
+            <option value="21A">21A</option>
+            <option value="OP25 (1)">OP25 (1)</option>
+            <option value="OP25 (2)">OP25 (2)</option>
+            <option value="TBT">TBT</option>
+            <option value="Prensa 01">Prensa 01</option>
+            <option value="Prensa 02">Prensa 02</option>
+            <option value="Prensa 03">Prensa 03</option>
+            <option value="Prensa 04">Prensa 04</option>
+            <option value="Prensa 05">Prensa 05</option>
+            <option value="Prensa 06">Prensa 06</option>
+            <option value="Prensa 07">Prensa 07</option>
+            <option value="2RC">2RC</option>
+            <option value="35F (1)">35F (1)</option>
+            <option value="35F (2)">35F (2)</option>
+            <option value="Prutton (1)">Prutton (1)</option>
+            <option value="Prutton (2)">Prutton (2)</option>
+            <option value="RD6 (1)">RD6 (1)</option>
+            <option value="RD6 (2)">RD6 (2)</option>
+          </select>
+          <!-- Fechamento equipamento -->
+          <label>Linha</label>
+          <!-- Select linha -->
+          <select
+            class="form-select mb-3"
+            aria-label="Default select example"
+            id="linhaProducao"
+          >
+            <option value=""></option>
+            <option value="Linha 01">Linha 01</option>
+            <option value="Linha 02">Linha 02</option>
+            <option value="Linha 03">Linha 03</option>
+            <option value="Linha 04">Linha 04</option>
+            <option value="Linha 05">Linha 05</option>
+            <option value="Linha 06">Linha 06</option>
+            <option value="Linha 07">Linha 07</option>
+            <option value="Linha 08">Linha 08</option>
+            <option value="Linha 09">Linha 09</option>
+            <option value="Linha 10">Linha 10</option>
+            <option value="Linha 11">Linha 11</option>
+            <option value="Linha 13">Linha 13</option>
+            <option value="Linha 14">Linha 14</option>
+            <option value="BV(1)">BV(1)</option>
+            <option value="BV(2)">BV(2)</option>
+            <option value="AFTM (1)">AFTM (1)</option>
+            <option value="AFTM (2)">AFTM (2)</option>
+            <option value="AFTM (3)">AFTM (3)</option>
+            <option value="Hollow Valve">Hollow Valve</option>
+            <option value="Forjaria">Forjaria</option>
+            <option value="Prensas">Prensas</option>
+            <option value="Célula 01">Célula 01</option>
+            <option value="Célula 02">Célula 02</option>
+            <option value="Célula 03">Célula 03</option>
+            <option value="Célula 04">Célula 04</option>
+            <option value="Célula 05">Célula 05</option>
+            <option value="Célula 06">Célula 06</option>
+            <option value="Célula 07">Célula 07</option>
+            <option value="Célula 08">Célula 08</option>
+            <option value="Célula 09">Célula 09</option>
+            <option value="Célula 10">Célula 10</option>
+            <option value="Endireitamento">Endireitamento</option>
+          </select>
+          <!-- Fechamento linha -->
+          <label>Característica avaliada</label>
+          <!-- Select caracteristica -->
+          <select
+            class="form-select mb-3"
+            aria-label="Default select example"
+            id="caracteristicaAvaliada"
+          >
+            <option value=""></option>
+            <!-- Caracteristicas C -->
+            <option value="Comprimento face/ponta">
+              Comprimento face/ponta
+            </option>
+            <option value="Comprimento sede/ponta">
+              Comprimento sede/ponta
+            </option>
+            <option value="Comprimento enchimento/ponta">
+              Comprimento enchimento/ponta
+            </option>
+            <option value="Comprimento gage/ponta">
+              Comprimento gage/ponta
+            </option>
+            <option value="Comprimento filete/ponta">
+              Comprimento filete/ponta
+            </option>
+            <option value="Comprimento sede/canaleta">
+              Comprimento sede/canaleta
+            </option>
+            <option value="Comprimento do paralelo">
+              Comprimento do paralelo
+            </option>
+            <option value="Comprimento retificado">
+              Comprimento retificado
+            </option>
+            <option value="Comprimento filete/ponta">
+              Comprimento filete/ponta
+            </option>
+            <!-- Caracteristicas D -->
+            <option value="Diâmetro da haste pé">Diâmetro da haste pé</option>
+            <option value="Diâmetro da haste meio">
+              Diâmetro da haste meio
+            </option>
+            <option value="Diâmetro da haste ponta">
+              Diâmetro da haste ponta
+            </option>
+            <option value="Diâmetro da cabeça">Diâmetro da cabeça</option>
+            <option value="Diâmetro do colarinho">Diâmetro do colarinho</option>
+            <option value="Diâmetro da canaleta">Diâmetro da canaleta</option>
+            <option value="Diâmetro do blend">Diâmetro do blend</option>
+            <option value="Diâmetro interno">Diâmetro interno</option>
+            <option value="Diâmetro do rebaixo">Diâmetro do rebaixo</option>
+            <!-- Caracteristicas E -->
+            <option value="Espessura da margem">Espessura da margem</option>
+            <option value="Espessura da cabeça">Espessura da cabeça</option>
+            <option value="Espessura do filete">Espessura do filete</option>
+            <option value="Esquadro do topo">Esquadro do topo</option>
+            <!-- Caracteristicas B -->
+            <option value="Batimento da cabeça">Batimento da cabeça</option>
+            <option value="Batimento do canal">Batimento do canal</option>
+            <option value="Batimento da sede">Batimento da sede</option>
+            <option value="Batimento do furo">Batimento do furo</option>
+            <option value="Batimento da haste">Batimento da haste</option>
+            <!-- Caracteristicas -->
+            <option value="Alinhamento haste/solda">
+              Alinhamento haste/solda
+            </option>
+            <option value="Planicidade da face">Planicidade do topo</option>
+          </select>
+          <!-- Fechamento caracteristica -->
+        </div>
+      </div>
+      <!-- Fechamento de dados -->
+      <!-- Botão confirmar dados iniciais -->
+      <div class="btn-confirm">
+        <input
+          type="button"
+          name="btn"
+          id="confirmbtn"
+          class="btn btn-primary confirm"
+          onclick="confirmarDadosIniciais()"
+          value="Confirmar dados"
+        />
+      </div>
+      <hr />
+      <!-- Inserir valores -->
+      <div class="mb-3 btn-input">
+        <!-- Botões e Inputs valores -->
+        <input
+          class="form-control"
+          type="number"
+          id="valorEncontrado"
+          step="0. 001"
+          disabled
+          placeholder="Insira os valores..."
+        />
+        <button
+          class="btn btn-primary"
+          type="button"
+          id="btnAdicionar"
+          disabled
+          onclick="adicionarValor()"
+        >
+          Adicionar Valor
+        </button>
+        <button
+          class="btn btn-primary"
+          id="btnRemoverUltimo"
+          disabled
+          onclick="removerUltimoValor()"
+        >
+          Remover Último
+        </button>
+        <button
+          class="btn btn-primary mb-0"
+          id="pdf"
+          onclick="gerarPDF()"
+          disabled
+        >
+          Gerar PDF
+        </button>
+      </div>
+      <!-- Fechamento botões e inputs valores -->
+      <div class="graph">
+        <!-- Abertura gráfico -->
+        <canvas id="grafico"></canvas>
+      </div>
+      <br />
+      <!-- Fechamento gráfico -->
+    </div>
+    <!-- Container -->
+  </body>
+  <!-- Meus scripts -->
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/focus.js"></script>
+  <script src="assets/js/capacidadeprocesso.js"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+  <!-- Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5    +R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Alert (SweetAlert) -->
+</html>

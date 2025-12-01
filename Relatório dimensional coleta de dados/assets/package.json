@@ -1,0 +1,12 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "Atualmente atuo como Inspetor de Qualidade, onde desenvolvi um olhar crítico, atenção aos detalhes e compromisso com a excelência, qualidades que levo comigo na transição para a área de tecnologia.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

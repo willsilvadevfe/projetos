@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .text {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .enter-data {
+    padding: 10px;
+  }
+
+  #nomeUsuario,
+  #numeroPeca,
+  #tolSup,
+  #tolInf {
+    margin-bottom: 10px;
+  }
+
+  .option-data {
+    padding: 10px;
+  }
+
+  span {
+    color: #2d5ef2;
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  }
+
+  .form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .btn-confirm {
+    display: grid;
+  }
+
+  .btn-input {
+    display: grid;
+    gap: 10px;
+  }
+
+  .option-data > select {
+    padding-left: 2px;
+  }
+
+  .graph {
+    padding: 15px;
+    border: 1px solid #3333331a;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  canvas {
+    max-width: auto;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .swal2-input {
+    max-width: 65%;
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .text {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .enter-data {
+    padding: 10px;
+  }
+
+  #nomeUsuario,
+  #numeroPeca,
+  #tolSup,
+  #tolInf {
+    margin-bottom: 10px;
+  }
+
+  .option-data {
+    padding: 10px;
+  }
+
+  span {
+    color: rgb(45, 94, 242);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  }
+
+  .form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .btn-confirm {
+    display: grid;
+  }
+
+  .btn-input {
+    display: grid;
+    gap: 10px;
+  }
+
+  .option-data > select {
+    padding-left: 2px;
+  }
+
+  .graph {
+    padding: 15px;
+    border: 1px solid #3333331a;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  canvas {
+    max-width: auto;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.swal2-input {
+  max-width: 65%;
+  border-radius: 6px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .all-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .enter-data {
+    padding: 10px;
+  }
+
+  #nomeUsuario,
+  #numeroPeca,
+  #tolSup,
+  #tolInf {
+    margin-bottom: 17.5px;
+  }
+
+  .option-data {
+    padding: 10px;
+  }
+
+  span {
+    color: rgb(45, 94, 242);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  }
+
+  .form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .btn-confirm {
+    display: grid;
+    justify-content: center;
+  }
+
+  #confirmbtn {
+    padding: 8px 60px;
+  }
+
+  .btn-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  .option-data > select {
+    padding-left: 2px;
+  }
+
+  .graph {
+    padding: 15px;
+    border: 1px solid #3333331a;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  canvas {
+    max-width: auto;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .swal2-input {
+    max-width: 65%;
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .all-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .enter-data {
+    padding: 10px;
+  }
+
+  #nomeUsuario,
+  #numeroPeca,
+  #tolSup,
+  #tolInf {
+    margin-bottom: 17.5px;
+  }
+
+  .option-data {
+    padding: 10px;
+  }
+
+  span {
+    color: rgb(45, 94, 242);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  }
+
+  .form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .btn-confirm {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  #confirmbtn {
+    padding: 8px 60px;
+  }
+
+  .btn-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+  }
+
+  .option-data > select {
+    padding-left: 2px;
+  }
+
+  .graph {
+    padding: 15px;
+    border: 1px solid #3333331a;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  canvas {
+    max-width: auto;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .swal2-input {
+    max-width: 65%;
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  .hr {
+    display: none;
+  }
+
+  .all-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .text {
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .enter-data {
+    padding: 10px;
+  }
+
+  #nomeUsuario,
+  #numeroPeca,
+  #tolSup,
+  #tolInf {
+    margin-bottom: 17.5px;
+  }
+
+  .option-data {
+    padding: 10px;
+  }
+
+  span {
+    color: rgb(45, 94, 242);
+    font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  }
+
+  .form {
+    display: grid;
+    gap: 10px;
+  }
+
+  .btn-confirm {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  #confirmbtn {
+    padding: 8px 60px;
+  }
+
+  .btn-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .option-data > select {
+    padding-left: 2px;
+  }
+
+  .graph {
+    padding: 15px;
+    border: 1px solid #3333331a;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  canvas {
+    max-width: auto;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .swal2-input {
+    max-width: 65%;
+    border-radius: 6px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+}

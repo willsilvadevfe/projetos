@@ -1,0 +1,1 @@
+Página criada para dar suporte aos funcionários da manufatura na empresa em que atuo (EATON LTDA), operador digita o valor do bloco que precisa em um input (em um array que contem apenas os blocos disponíveis na sala de metrologia) e ao clicar no botão é executado uma ação que calcula o valor digitado e seleciona os blocos corretos e entrega resultado.

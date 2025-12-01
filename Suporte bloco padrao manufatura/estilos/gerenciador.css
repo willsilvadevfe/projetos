@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); /*Roboto*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+body {
+  background-color: #202125;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.navbar {
+  position: absolute;
+}
+
+span {
+  color: #8faadf;
+}
+
+.main > h1 {
+  padding: 100px 0px 10px 0px;
+  letter-spacing: -0.6px;
+  font-size: 2.8rem;
+  width: 100%;
+}
+
+.main > p {
+  max-width: 100%;
+  color: #959597;
+}
+
+.descricao-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin: 3rem;
+  padding: 5px;
+}
+
+.descricao > h2 {
+  text-align: center;
+  padding: 6px;
+}
+.descricao > p {
+  text-align: center;
+  padding: 6px;
+  max-width: 80%;
+  margin: auto;
+  color: #959597;
+}
+
+.descricao2 > h2 {
+  text-align: center;
+  padding: 10px 6px 6px 6px;
+}
+
+.descricao2 > li {
+  text-align: center;
+  padding: 6px;
+  max-width: 80%;
+  margin: auto;
+  color: #959597;
+}
+
+.input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  padding: 10px;
+ 
+}
+
+.input-btn > label > input {
+  margin: 5px;
+  height: 2.5rem;
+  width: 5rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+label{
+  font-size: 1.2rem;
+}
+
+.input-btn > .btns > button {
+  margin: 5px;
+  height: 2.5rem;
+  width: 5rem;
+  border: none;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #8faadf;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.res {
+  padding: 15px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* ACCORDION */
+
+.accordion-item {
+  background-color: #ffffffd7;
+  border: 1px solid black;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion-button {
+  background-color: #8faadf;
+}

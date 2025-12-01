@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); /*Roboto*/
+
+/*Colors: #8FAADF - #E4E5E9*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  background-color: #202125;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: absolute;
+  }
+
+span {
+  color: #8faadf;
+}
+
+.card {
+  width: 23%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 8%;
+}
+
+.text-about > h1 {
+  color: #fff;
+  font-size: 3.3rem;
+  letter-spacing: -2px;
+  padding-bottom: 20px;
+  line-height: 3rem;
+  width: 45rem;
+}
+
+.text-about > p {
+  color: #fff;
+  font-size: 1rem;
+  width: 45rem;
+  padding-bottom: 20px;
+}
+
+.only-mobile {
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+br {
+  display: none;
+}

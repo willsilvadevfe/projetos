@@ -7,7 +7,7 @@ O objetivo deste repositório é mostrar minha capacidade de criar interfaces fu
 
 HTML5 — Estruturação semântica das páginas
 
-CSS3 — Estilos, layout responsivo e design visual
+CSS3 — Estilos, layout responsivo e design visual (focado em layout responsivo Flexbox e Grid layout)
 
 JavaScript (ES6+) — Interações dinâmicas e lógica de aplicação
 
@@ -16,7 +16,6 @@ Bootstrap — Framework front-end para responsividade e componentes
 SweetAlert — Alertas modernos e personalizados para UX
 
 ChartJS — Gráficos interativos e visualização de dados
-
 
 🎯 Objetivo
 

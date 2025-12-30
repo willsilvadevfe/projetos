@@ -1,0 +1,377 @@
+/* FONTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* SWEETALERT2 - FONTES */
+
+.swal2-popup {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.swal2-title {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.swal2-html-container {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* CORES DO SITE */
+
+:root {
+  --fundo: #f4f1ec;
+  --primaria: #5c8d89;
+  --secundaria: #a7c4bc;
+  --texto: #2f3e46;
+  --detalhes: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container-01 {
+  width: 100%;
+  height: 100dvh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.26);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* MENU DESKTOP */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-list a {
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #6fa8a1;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+}
+
+/* LOGO */
+
+.logo img {
+  height: 80px;
+}
+
+.section-1 {
+  position: relative;
+  height: 90dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding: 80px 8%;
+  background: var(--secundaria);
+}
+
+.texto-section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: var(--texto);
+  font-size: 4.6rem;
+  padding: 10px 0px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 70px;
+}
+
+p {
+  width: 80%;
+  color: var(--primaria);
+  font-size: 1.8rem;
+  padding: 20px 0px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+}
+
+#psi {
+  width: 35%;
+}
+
+.btn-agendar {
+  margin: 10px 0px;
+  background-color: #5c8d89;
+  width: 30%;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#agendar {
+  scroll-margin-top: 150px;
+}
+
+.btn-agendar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.btn-agendar:hover {
+  background-color: #4e7d7879;
+  box-shadow: 0 6px 10px rgba(92, 141, 137, 0.4);
+}
+
+.btn-agendar:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(92, 141, 137, 0.3);
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+}
+
+.wave svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+/* CONTEINER 02 */
+
+.container-02 {
+  width: 100%;
+  height: 60dvh;
+  display: flex;
+  justify-content: space-evenly;
+  scroll-margin-top: 90px;
+}
+
+.container-02 > img {
+  border-radius: 20px;
+  width: 32%;
+  height: 80%;
+}
+
+h2 {
+  color: var(--texto);
+  font-size: 4rem;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  padding: 20px 0px;
+}
+
+.texto-02 {
+  font-size: 1.6rem;
+}
+
+.texto-section-2 {
+  width: 50%;
+}
+
+/* CONTEINER 03 */
+
+.container-03 {
+  position: relative;
+  width: 100%;
+  height: 80dvh;
+  background-color: var(--secundaria);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave-top {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.wave-top svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+#text-h2-container-03 {
+  font-size: 3.5rem;
+}
+
+/* CONTEINER 04 */
+
+.container-04 {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 60px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+}
+
+h4 {
+  font-size: 3.5rem;
+  font-weight: 200;
+  padding: 40px 0px;
+  color: var(--texto);
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-left: 30px;
+}
+
+.text-progress {
+  font-size: 1.6rem;
+  color: #333333c5;
+}
+
+#bipolarsvg {
+  width: 60%;
+  text-align: center;
+}
+
+.progress-section {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.progress-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.progress-item {
+  margin-bottom: 20px;
+}
+
+.progress-item span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #555;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e5e5e5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #a7c4bc, #8fb3a9);
+  border-radius: 20px;
+  transition: width 2s ease;
+}
+
+.progress-item small {
+  display: block;
+  margin-top: 6px;
+  text-align: right;
+  color: #777;
+}
+
+.conteiner-05 {
+  width: 100%;
+  height: 100dvh;
+  background-color: #4e7d78;
+  font-family: "Monteserrat", Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.conteinar-05-text {
+  width: 50%;
+  font-family: "Monteserrat", Arial, Helvetica, sans-serif;
+}
+
+.contato-info > h4 {
+  font-size: 3.5rem;
+  color: var(--texto);
+}
+
+.contato-info p {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+  font-size: 1.8rem;
+  color: #ffffff56;
+}
+
+.contato-info p i {
+  color: var(--secundaria);
+}
+
+footer {
+  width: 100%;
+  height: 10dvh;
+  background-color: #333;
+}

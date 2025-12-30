@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png"> <!-- FAVICON -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16.png"> <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png"> <!-- FAVICON -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/accordion.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/backtotop.css" />
+    <link rel="stylesheet" href="assets/css/mediaqueries.css" />
+    <link rel="stylesheet" href="sweetalert2.min.css"></link> <!-- SWEETALERT2 -->
+    <title>Ingrid Silva Psicóloga</title>
+  </head>
+  <body>
+    <div class="container-01">
+      <header class="header">
+        <div class="logo">
+          <a href="#inicio"><img id="img-logo" src="assets/img/logo.png" alt="logo"></img></a>
+        </div>
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+            <li><a href="#beneficios">Benefícios</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+      <section class="section-1" id="inicio">
+        <div class="texto-section-1">
+          <h1 data-aos="fade-up" data-aos-duration="400">
+            Suporte emocional com propósito e cuidado!
+          </h1>
+          <p data-aos="fade-up" data-aos-duration="800">
+            Um ambiente seguro para quem busca cuidado emocional, processamento
+            de traumas e equilíbrio entre corpo e mente. Acolhimento,
+            profundidade e respeito ao seu ritmo.
+          </p>
+          <button
+            class="btn-agendar"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a href="#contato">Agendar consulta</a>
+          </button>
+        </div>
+        <img
+          id="psi"
+          src="assets/img/psi.svg"
+          alt="psi"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        />
+        <div class="wave">
+          <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path
+              d="M0,64L48,69.3C96,75,192,85,288,74.7C384,64,480,32,576,26.7C672,21,768,43,864,58.7C960,75,1056,85,1152,74.7C1248,64,1344,32,1392,16L1440,0L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"
+              fill="#ffffff"
+            />
+          </svg>
+        </div>
+      </section>
+    </div>
+    <!-- SECTION 02 -->
+    <div class="container-02" id="sobre">
+      <img
+        id="photo-profile"
+        src="assets/img/psi-02.svg"
+        alt="profile"
+        data-aos="fade-right"
+        data-aos-duration="800"
+      />
+      <div class="texto-section-2">
+        <h2 data-aos="fade-up" data-aos-duration="400">Sobre min</h2>
+        <p
+          class="texto-02"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+          data-aos-duration="600"
+        >
+          Olá, sou Ingrid Silva (CRP 06/206903). Minha trajetória na Psicologia
+          me permitiu desenvolver um olhar humano, sensível e estratégico sobre
+          cada história que acompanho. Atuei no atendimento clínico, na
+          orientação profissional em ambientes educacionais e no acolhimento em
+          comunidades, experiências que ampliaram minha compreensão sobre o ser
+          humano em sua pluralidade. Esse percurso fortaleceu meu compromisso
+          com um cuidado ético, empático e respeitoso, sempre atento às
+          singularidades de cada pessoa.
+        </p>
+      </div>
+    </div>
+    <!-- SECTION 03 -->
+    <div class="container-03" id="duvidas">
+      <!-- WAVE TOPO -->
+      <div class="wave-top">
+        <svg
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,80C240,120,480,40,720,50C960,60,1200,100,1440,80L1440,0L0,0Z"
+            fill="#fff"
+          />
+        </svg>
+      </div>
+      <!-- SECTION ACCORDION -->
+      <h2 id="text-h2-container-03" data-aos="fade-up" data-aos-duration="400">
+        Dúvidas frequentes
+      </h2>
+      <div class="accordion" data-aos="fade-up" data-aos-duration="400">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Como funciona o atendimento psicológico online?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              O atendimento online é realizado por videochamada, em um ambiente
+              seguro e sigiloso. Basta ter um dispositivo com câmera, microfone
+              e conexão à internet. As sessões são previamente agendadas e
+              seguem os mesmos princípios éticos do atendimento presencial.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" data-aos="fade-up" data-aos-duration="600">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Para quem o atendimento é indicado?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Atendo crianças, adolescentes, adultos, casais e pessoas idosas
+              que estejam enfrentando desafios emocionais, dificuldades nos
+              relacionamentos, questões de autoestima, ansiedade, depressão,
+              entre outros temas. Também ofereço apoio para transições de vida e
+              desenvolvimento pessoal ou profissional.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" data-aos="fade-up" data-aos-duration="800">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            Quanto tempo dura o processo terapêutico?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              A duração da terapia varia conforme os objetivos e necessidades de
+              cada pessoa. Algumas pessoas buscam apoio para questões pontuais,
+              enquanto outras preferem um acompanhamento mais contínuo. Isso é
+              sempre conversado ao longo do processo.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" data-aos="fade-up" data-aos-duration="1000">
+        <div class="accordion-item">
+          <div class="accordion-item-header">Como agendar uma sessão?</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Você pode entrar em contato pelo WhatsApp, e-mail ou formulário no
+              site. Após o primeiro contato, combinamos um horário que se adeque
+              à sua rotina e passamos as orientações para o atendimento online.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion" data-aos="fade-up" data-aos-duration="1200">
+        <div class="accordion-item">
+          <div class="accordion-item-header">Você atende por convênio?</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Atendo apenas de forma particular. No entanto, alguns convênios
+              oferecem reembolso para sessões com psicólogos, e posso te
+              auxiliar com o recibo caso queira solicitar.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SECTION 04 BENEFICIOS -->
+    <div class="container-04" id="beneficios">
+      <section class="text-section">
+        <h4 data-aos="fade-right">A psicologia como aliada do bem-estar.</h4>
+        <span class="text-progress" data-aos="fade-right"
+          >A psicologia contribui de forma comprovada para o equilíbrio
+          emocional, o autoconhecimento e a melhoria da qualidade de vida. Por
+          meio do acompanhamento psicológico, é possível desenvolver recursos
+          internos, lidar melhor com desafios emocionais e construir uma vida
+          mais saudável, com mais consciência e bem-estar.</span
+        >
+        <img
+          src="assets/img/mental.svg"
+          id="bipolarsvg"
+          alt="mental"
+          data-aos="fade-right"
+          data-aos-duration="400"
+        />
+      </section>
+      <section class="progress-section" id="dados-psicologia">
+        <h4 data-aos="fade-left">
+          Como a psicologia contribui para uma vida mais equilibrada.
+        </h4>
+        <div
+          class="progress-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <span
+            >Pessoas que relatam melhora emocional com acompanhamento
+            psicológico.</span
+          >
+          <div class="progress-bar">
+            <div class="progress-fill" data-percent="85"></div>
+          </div>
+          <small>85%</small>
+        </div>
+        <div
+          class="progress-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <span
+            >Pacientes afirmam maior autoconhecimento após iniciar a
+            terapia.</span
+          >
+          <div class="progress-bar">
+            <div class="progress-fill" data-percent="90"></div>
+          </div>
+          <small>90%</small>
+        </div>
+        <div
+          class="progress-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <span
+            >Pacientes que apresentam redução significativa da ansiedade e do
+            estresse</span
+          >
+          <div class="progress-bar">
+            <div class="progress-fill" data-percent="88"></div>
+          </div>
+          <small>88%</small>
+        </div>
+        <div
+          class="progress-item"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <span
+            >Pessoas que relatam melhora na qualidade de vida e bem-estar
+            geral</span
+          >
+          <div class="progress-bar">
+            <div class="progress-fill" data-percent="92"></div>
+          </div>
+          <small>92%</small>
+        </div>
+      </section>
+    </div>
+    <!-- CONTEINER 05 - FORMULARIO -->
+    <section class="conteiner-05">
+      <div class="conteinar-05-text">
+        <div class="contato-info">
+          <h4 id="contato" data-aos="fade-up" data-aos-duration="400">
+            Vamos conversar ?
+          </h4>
+          <p data-aos="fade-up" data-aos-duration="600">
+            Estou disponível para ouvir você com cuidado, ética e respeito.
+            Entre em contato para agendar sua consulta ou tirar dúvidas.
+          </p>
+          <p data-aos="fade-right" data-aos-duration="600">
+            <i class="fa-solid fa-lock"></i>&nbsp;&nbsp;Atendimento sigiloso
+          </p>
+          <p data-aos="fade-right" data-aos-duration="600">
+            <i class="fa-solid fa-comment"></i>&nbsp;&nbsp;Escuta acolhedora
+          </p>
+          <p data-aos="fade-right" data-aos-duration="600">
+            <i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;Horários flexíveis
+          </p>
+          <p data-aos="fade-right" data-aos-duration="600">
+            <i class="fa-solid fa-wifi"></i>&nbsp;&nbsp;Atendimento online
+          </p>
+        </div>
+      </div>
+      <form class="formulario" id="form-contato">
+        <h2 class="titulo">Entre em contato</h2>
+        <label class="label">
+          <input
+            type="text"
+            name="name"
+            class="input-bordas"
+            placeholder="Nome"
+            required
+          />
+          <span class="focus-border"><i></i></span>
+        </label>
+
+        <label class="label">
+          <input
+            type="email"
+            name="email"
+            class="input-bordas"
+            placeholder="E-mail"
+            required
+          />
+          <span class="focus-border"><i></i></span>
+        </label>
+        <label class="label">
+          <input
+            type="text"
+            name="assunto"
+            class="input-bordas"
+            placeholder="Assunto"
+            required
+          />
+          <span class="focus-border"><i></i></span>
+        </label>
+        <label class="label">
+          <textarea
+            name="mensagem"
+            class="input-bordas textarea"
+            rows="4"
+            placeholder="Mensagem"
+            required
+          ></textarea>
+          <span class="focus-border"><i></i></span>
+        </label>
+        <button type="submit" class="button-form borda-inversa">Enviar</button>
+      </form>
+    </section>
+    <!-- BACK TO TOP -->
+    <div class="backtop">
+      <button id="btn-topo" aria-label="Voltar ao topo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="22"
+          height="22"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M18 15l-6-6-6 6" />
+        </svg>
+      </button>
+    </div>
+    <footer>
+      <ul class="example-2">
+        <li class="icon-content">
+          <a
+            data-social="whatsapp"
+            aria-label="Whatsapp"
+            href="contate.me/5512988646480"
+          >
+            <div class="filled"></div>
+            <svg
+              xml:space="preserve"
+              viewBox="0 0 24 24"
+              class="bi bi-whatsapp"
+              fill="currentColor"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip"></div>
+        </li>
+        <li class="icon-content">
+          <a
+            data-social="facebook"
+            aria-label="Facebook"
+            href="https://www.facebook.com/ingrid.caroline.77715"
+          >
+            <div class="filled"></div>
+            <svg
+              xml:space="preserve"
+              viewBox="0 0 24 24"
+              class="bi bi-facbook"
+              fill="currentColor"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip"></div>
+        </li>
+        <li class="icon-content">
+          <a
+            data-social="instagram"
+            aria-label="Instagram"
+            href="https://www.instagram.com/ingridrosa.psi"
+          >
+            <div class="filled"></div>
+            <svg
+              xml:space="preserve"
+              viewBox="0 0 16 16"
+              class="bi bi-instagram"
+              fill="currentColor"
+              height="16"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              ></path>
+            </svg>
+          </a>
+          <div class="tooltip"></div>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backtotop.js"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/accordion.js"></script>
+    <!-- FIM SCRIPTS -->
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- FIM AOS -->
+
+    <!-- EMAILJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "WczRV0MnHDCz5FrOw",
+        });
+      })();
+    </script>
+    <!-- FIM EMAILJS -->
+
+    <!-- SWEETALERT2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- FIM SWEETALERT2 -->
+
+    <!-- FONT ALERT EMAIL -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- FIM FONT ALERT EMAIL -->
+  </body>
+</html>

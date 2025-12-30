@@ -1,0 +1,30 @@
+.backtop{
+    background-color: #4e7d78;
+    padding: 0px 0px 20px 0px;
+}
+
+#btn-topo {
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff; /* controla a cor do SVG */
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#btn-topo svg {
+  pointer-events: none;
+}
+
+#btn-topo:hover {
+  transform: translateY(-4px);
+  opacity: 0.9;
+}
+

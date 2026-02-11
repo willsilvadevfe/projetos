@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.conteiner {
+  width: 100vw;
+  height: 100dvh;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+img{
+  width: 10%;
+}
+
+header {
+  width: 100vw;
+  height: 10dvh;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  height: 90dvh;
+  background-color: rgb(88, 135, 177);
+}
+

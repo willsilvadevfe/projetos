@@ -8,6 +8,10 @@
     --text-main: #333;
 }
 
+*{
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
 .dashboard {
     margin: auto;
     background: white;
@@ -30,7 +34,7 @@
 
 .sidebar h3 {
     color: var(--primary-blue);
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
     border-bottom: 2px solid var(--primary-blue);
     padding-bottom: 8px;

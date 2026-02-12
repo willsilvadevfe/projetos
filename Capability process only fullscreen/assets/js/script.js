@@ -57,8 +57,6 @@ function processData() {
     return
   }
 
-
-
   const USL = parseFloat(uslInput);
   const LSL =
     document.getElementById("lsl").value !== ""
@@ -120,6 +118,8 @@ function processData() {
   render(dataPoints, stats);
 }
 
+
+
 function render(data, stats) {
   const ctx = document.getElementById("capChart").getContext("2d");
   if (chartInstance) chartInstance.destroy();
@@ -170,19 +170,22 @@ function render(data, stats) {
     };
   }
 
-  chartInstance = new Chart(ctx, {
+ chartInstance = new Chart(ctx, {
     type: "bar",
     data: {
       datasets: [
         {
           type: "line",
+          label: "Curva Normal",
           data: curve,
           borderColor: "#d9534f",
           borderWidth: 2,
           pointRadius: 0,
+          fill: false,
           order: 1,
         },
         {
+          label: "Histograma",
           data: histogramData.map((v, i) => ({
             x: minX + i * size + size / 2,
             y: v,
@@ -201,7 +204,7 @@ function render(data, stats) {
       layout: { padding: { right: 230, top: 40, left: 10 } },
       scales: {
         x: {
-          type: "linear",
+          type: "linear", // Garante que o eixo seja numérico
           position: "bottom",
           title: { display: true, text: "Dimensão" },
         },
@@ -209,7 +212,9 @@ function render(data, stats) {
       },
       plugins: {
         legend: { display: false },
-        annotation: { annotations },
+        annotation: {
+          annotations: annotations // Aplica o objeto criado acima
+        },
       },
     },
     plugins: [
@@ -296,3 +301,5 @@ function download() {
   link.href = canvas.toDataURL("image/png", 1.0);
   link.click();
 }
+
+

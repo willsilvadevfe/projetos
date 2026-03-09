@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <select id="tipoValvula">
+        <option value="V">V</option>
+        <option value="VS">VS</option>
+        <option value="XV">XV</option>
+      </select>
+
+      <label for="partnumber"
+        >PN:
+        <input id="partnumber" type="number" />
+      </label>
+
+      <div>
+        <label for="faceponta"
+          >Comprimento face/ponta:
+          <input id="faceponta" type="number" step="0.01" />
+        </label>
+
+        <label for="planicidadetopo"
+          >Planicidade do topo:
+          <input id="planicidadetopo" type="number" step="0.01" />
+        </label>
+
+        <p id="visual">Visual</p>
+        <input type="radio" name="visual" value="OK" id="v_ok" />
+        <label for="v_ok">OK</label>
+        <input type="radio" name="visual" value="NOK" id="v_nok" />
+        <label for="v_nok">NOK</label>
+        <button id="btnSalvar">Salvar</button>
+      </div>
+    </div>
+  </body>
+  <script src="server.js"></script>
+  <script src="script.js"></script>
+</html>

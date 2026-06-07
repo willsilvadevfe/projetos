@@ -1,0 +1,15 @@
+# Electron
+meu_projeto/Electron/
+node_modules/
+dist/
+*.exe
+*.app
+*.dmg
+
+# Sistema
+.DS_Store
+Thumbs.db
+.cache/
+
+# OneDrive
+desktop.ini

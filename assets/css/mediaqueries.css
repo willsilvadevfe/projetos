@@ -1,0 +1,274 @@
+/* ============================================================
+   RESPONSIVE — TABLET
+   ============================================================ */
+@media (max-width: 900px) {
+  .section-1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 6vw 60px;
+    justify-content: center;
+  }
+
+  .texto-section-1 {
+    max-width: 100%;
+  }
+
+  .texto-section-1 h1 {
+    max-width: 100%;
+    font-size: 2em;
+  }
+
+  .texto-section-1 p {
+    margin: 0 auto 2rem;
+    font-size: 0.9em;
+  }
+
+  #psi {
+    width: clamp(200px, 55vw, 360px);
+  }
+
+  .container-02 {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 6vw;
+    text-align: center;
+  }
+
+  .texto-section-2 h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .texto-section-2 h2{
+    font-family: 2em;
+  }
+
+  .texto-02 {
+    border-left: none;
+    font-size: 0.9em;
+    border-top: 3px solid var(--rose-light);
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  #text-h2-container-03 {
+  font-size: 2em;
+}
+
+.accordion-item-header {
+  font-size: 0.9em;
+}
+
+  .container-04 {
+    flex-direction: column;
+    padding: 80px 6vw;
+    text-align: center;
+  }
+
+  .text-section h4 {
+  font-size: 2em;
+}
+
+.text-progress {
+  font-size: 0.9em;
+}
+
+  #bipolarsvg {
+    margin: 0 auto;
+  }
+
+  .conteiner-05 {
+    flex-direction: column;
+    padding: 80px 6vw;
+  }
+
+  .progress-section h4{
+    font-size: 2em;
+  }
+
+  .progress-item span{
+    font-size: 0.9em;
+  }
+
+  .contato-info {
+    position: static;
+    text-align: center;
+  }
+
+  .conteinar-05-text{
+    font-size: 0.9em;
+  }
+
+  .contato-info h4{
+    font-size: 2em;
+  }
+
+  .contato-info > p:first-of-type {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contato-info p:not(:first-of-type) {
+    justify-content: center;
+  }
+
+  .button-form {
+    align-self: center;
+  }
+}
+
+/* Menu mobile escondido por padrão */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* ajuste para a cor do seu header */
+    z-index: 999;
+  }
+
+  .nav.open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .nav-list li {
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  /* Animação do hamburguer → X */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #000; /* ajuste para a cor das suas linhas */
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* Esconde o botão no desktop */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .nav {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: rgba(250, 247, 242, 0.97);
+    backdrop-filter: blur(14px);
+    padding: 1.5rem 6vw 2rem;
+    transform: translateY(-110%);
+    opacity: 0;
+    transition:
+      transform var(--transition),
+      opacity var(--transition);
+    border-bottom: 1px solid rgba(201, 137, 123, 0.15);
+    z-index: 999;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header {
+    padding: 0 5vw;
+  }
+
+  .section-1 {
+    padding: 100px 5vw 50px;
+  }
+
+  .container-02,
+  .container-03,
+  .container-04,
+  .conteiner-05 {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .formulario {
+    padding: 2rem 1.5rem;
+  }
+
+  #text-h2-container-03::before,
+  #text-h2-container-03::after {
+    display: none;
+  }
+
+  .container-04::before {
+    display: none;
+  }
+}
+
+/* ============================================================
+   UTILITIES
+   ============================================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Smooth section separation */
+section,
+.container-02,
+.container-03,
+.container-04,
+.conteiner-05 {
+  scroll-margin-top: 72px;
+}

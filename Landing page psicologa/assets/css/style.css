@@ -1,13 +1,8 @@
-/* ============================================================
-   INGRID SILVA PSICÓLOGA — CSS COMPLETO
-   Paleta: Rose cream · Sage green · Warm ivory · Dusty mauve
-   ============================================================ */
-
 /* ── GOOGLE FONTS ── */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
-/* ── RESET & BASE ── */
-*, *::before, *::after {
+/* ── RESET ── */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -92,13 +87,12 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 /* Logo */
-.logo a { display: flex; align-items: center; }
 #img-logo {
-  width: 250px;
+  width: 200px;
   margin-top: 10px;
-  transition: transform var(--transition);
+  cursor: pointer;
 }
-#img-logo:hover { transform: scale(1.04); }
+
 
 /* Nav */
 .nav-list {
@@ -154,7 +148,7 @@ button { cursor: pointer; font-family: var(--font-body); }
    CONTAINER 01 — HERO
    ============================================================ */
 .container-01 {
-  background: linear-gradient(145deg, #EAD9D3 0%, #D9C5BE 40%, #C8B5AE 100%);
+  background: linear-gradient(145deg, #f3cabb 0%, #D9C5BE 40%, #faddd3 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -184,13 +178,13 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 .texto-section-1 {
-  max-width: 560px;
+  max-width: 600px;
   z-index: 1;
 }
 
 .texto-section-1 h1 {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  font-size: clamp(2rem, 4.5vw, 3.8rem);
   font-weight: 500;
   line-height: 1.2;
   color: var(--text-dark);
@@ -204,10 +198,10 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 .texto-section-1 p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: var(--text-mid);
   margin-bottom: 2rem;
-  max-width: 480px;
+  max-width: 500px;
   line-height: 1.8;
 }
 
@@ -238,7 +232,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   position: relative;
   z-index: 1;
   filter: drop-shadow(0 20px 48px rgba(46,41,38,.18));
-  animation: floatPsi 5s ease-in-out infinite;
+  
 }
 
 @keyframes floatPsi {
@@ -260,7 +254,8 @@ button { cursor: pointer; font-family: var(--font-body); }
 .container-02 {
   display: flex;
   align-items: center;
-  gap: 5vw;
+  justify-content: center;
+  gap: 10vw;
   padding: 100px 8vw;
   background: var(--white);
   position: relative;
@@ -271,7 +266,6 @@ button { cursor: pointer; font-family: var(--font-body); }
   position: absolute;
   right: 0; top: 15%;
   width: 200px; height: 60%;
-  background: linear-gradient(to left, var(--rose-pale), transparent);
   pointer-events: none;
 }
 
@@ -288,7 +282,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .texto-section-2 h2 {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
   font-weight: 500;
   color: var(--text-dark);
   margin-bottom: 1.5rem;
@@ -306,11 +300,11 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 .texto-02 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--text-mid);
   line-height: 1.85;
   border-left: 3px solid var(--rose-light);
-  padding-left: 1.25rem;
+  padding-left: 1rem;
 }
 
 /* ============================================================
@@ -326,7 +320,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   line-height: 0;
   margin-bottom: 60px;
 }
-.wave-top svg { width: 100%; height: auto; display: block; }
+.wave-top svg { width: 100%; height: 5vh; display: block; }
 
 #text-h2-container-03 {
   font-family: var(--font-display);
@@ -441,7 +435,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .text-section h4 {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
   font-weight: 500;
   color: var(--text-dark);
   margin-bottom: 1.25rem;
@@ -450,16 +444,16 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .text-progress {
   display: block;
-  font-size: .95rem;
+  font-size: 1rem;
   color: var(--text-mid);
   line-height: 1.85;
   margin-bottom: 2rem;
 }
 
 #bipolarsvg {
-  width: clamp(160px, 22vw, 280px);
-  margin-top: 1rem;
-  opacity: .85;
+  width: clamp(160px, 22vw, 300px);
+  margin: 0 auto;
+  opacity: .80;
 }
 
 /* Progress section */
@@ -470,8 +464,9 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .progress-section h4 {
   font-family: var(--font-display);
-  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-size: clamp(1.3rem, 2.5vw, 2.5rem);
   font-weight: 500;
+  max-width: 700px;
   color: var(--text-dark);
   margin-bottom: 2rem;
   line-height: 1.35;
@@ -483,7 +478,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .progress-item span {
   display: block;
-  font-size: .88rem;
+  font-size: 1rem;
   color: var(--text-mid);
   margin-bottom: .45rem;
   font-weight: 400;
@@ -491,7 +486,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .progress-bar {
   width: 100%;
-  height: 8px;
+  height: 9px;
   background: var(--cream);
   border-radius: 99px;
   overflow: hidden;
@@ -526,15 +521,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   overflow: hidden;
 }
 
-.conteiner-05::after {
-  content: '';
-  position: absolute;
-  right: -80px; bottom: -80px;
-  width: 320px; height: 320px;
-  border-radius: 50%;
-  background: var(--sage-pale);
-  pointer-events: none;
-}
+
 
 .conteinar-05-text {
   flex: 1;
@@ -550,7 +537,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .contato-info h4 {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-size: clamp(1.8rem, 3vw, 3rem);
   font-weight: 500;
   color: var(--text-dark);
   line-height: 1.25;
@@ -558,7 +545,7 @@ button { cursor: pointer; font-family: var(--font-body); }
 }
 
 .contato-info > p:first-of-type {
-  font-size: .97rem;
+  font-size: 1;
   color: var(--text-mid);
   margin-bottom: 1.75rem;
   line-height: 1.8;
@@ -569,7 +556,7 @@ button { cursor: pointer; font-family: var(--font-body); }
   display: flex;
   align-items: center;
   gap: .6rem;
-  font-size: .9rem;
+  font-size: 1rem;
   color: var(--text-mid);
   margin-bottom: .65rem;
   font-weight: 400;
@@ -679,49 +666,14 @@ button { cursor: pointer; font-family: var(--font-body); }
 
 .button-form:active { transform: translateY(0); }
 
-/* ============================================================
-   BACK TO TOP
-   ============================================================ */
-.backtop {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  z-index: 900;
-}
-
-#btn-topo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px; height: 44px;
-  background: var(--rose);
-  color: var(--white);
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 18px rgba(201,137,123,.45);
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity var(--transition), transform var(--transition), background var(--transition);
-  pointer-events: none;
-}
-
-#btn-topo.visible {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
-}
-
-#btn-topo:hover {
-  background: var(--mauve);
-  box-shadow: 0 6px 22px rgba(155,123,138,.45);
-}
 
 /* ============================================================
    FOOTER
    ============================================================ */
 footer {
   background: var(--text-dark);
-  padding: 2.5rem 0;
+  padding: 0rem 0;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -785,132 +737,4 @@ footer {
    ============================================================ */
 [data-aos] { transition-timing-function: cubic-bezier(.4,0,.2,1) !important; }
 
-/* ============================================================
-   RESPONSIVE — TABLET
-   ============================================================ */
-@media (max-width: 900px) {
-  .section-1 {
-    flex-direction: column;
-    text-align: center;
-    padding: 120px 6vw 60px;
-    justify-content: center;
-  }
 
-  .texto-section-1 { max-width: 100%; }
-
-  .texto-section-1 p { margin: 0 auto 2rem; }
-
-  #psi {
-    width: clamp(200px, 55vw, 360px);
-  }
-
-  .container-02 {
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 6vw;
-    text-align: center;
-  }
-
-  .texto-section-2 h2::after { left: 50%; transform: translateX(-50%); }
-
-  .texto-02 {
-    border-left: none;
-    border-top: 3px solid var(--rose-light);
-    padding-left: 0;
-    padding-top: 1rem;
-  }
-
-  .container-04 {
-    flex-direction: column;
-    padding: 80px 6vw;
-    text-align: center;
-  }
-
-  #bipolarsvg { margin: 0 auto; }
-
-  .conteiner-05 {
-    flex-direction: column;
-    padding: 80px 6vw;
-  }
-
-  .contato-info {
-    position: static;
-    text-align: center;
-  }
-
-  .contato-info > p:first-of-type { margin-left: auto; margin-right: auto; }
-
-  .contato-info p:not(:first-of-type) { justify-content: center; }
-
-  .button-form { align-self: center; }
-}
-
-/* ============================================================
-   RESPONSIVE — MOBILE
-   ============================================================ */
-@media (max-width: 640px) {
-  .nav {
-    position: fixed;
-    top: 72px; left: 0; right: 0;
-    background: rgba(250,247,242,.97);
-    backdrop-filter: blur(14px);
-    padding: 1.5rem 6vw 2rem;
-    transform: translateY(-110%);
-    opacity: 0;
-    transition: transform var(--transition), opacity var(--transition);
-    border-bottom: 1px solid rgba(201,137,123,.15);
-    z-index: 999;
-  }
-
-  .nav.open {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.25rem;
-  }
-
-  .nav-list a { font-size: 1rem; }
-
-  .hamburger { display: flex; }
-
-  .header { padding: 0 5vw; }
-
-  .section-1 { padding: 100px 5vw 50px; }
-
-  .container-02,
-  .container-03,
-  .container-04,
-  .conteiner-05 {
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-
-  .formulario { padding: 2rem 1.5rem; }
-
-  #text-h2-container-03::before,
-  #text-h2-container-03::after { display: none; }
-
-  .container-04::before { display: none; }
-}
-
-/* ============================================================
-   UTILITIES
-   ============================================================ */
-.sr-only {
-  position: absolute;
-  width: 1px; height: 1px;
-  padding: 0; margin: -1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  white-space: nowrap;
-  border: 0;
-}
-
-/* Smooth section separation */
-section, .container-02, .container-03, .container-04, .conteiner-05 {
-  scroll-margin-top: 72px;
-}

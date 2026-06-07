@@ -1,13 +1,15 @@
 const hamburger = document.getElementById("hamburger");
-  const nav = document.getElementById("nav");
-  const links = document.querySelectorAll(".nav-list a");
+const nav = document.getElementById("nav");
 
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  nav.classList.toggle("open");
+});
 
-  links.forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("active");
-    });
+// Fecha o menu ao clicar em um link
+document.querySelectorAll(".nav-list a").forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    nav.classList.remove("open");
   });
+});

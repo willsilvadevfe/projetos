@@ -94,8 +94,8 @@ button { cursor: pointer; font-family: var(--font-body); }
 /* Logo */
 .logo a { display: flex; align-items: center; }
 #img-logo {
-  height: 48px;
-  width: auto;
+  width: 250px;
+  margin-top: 10px;
   transition: transform var(--transition);
 }
 #img-logo:hover { transform: scale(1.04); }
